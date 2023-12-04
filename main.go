@@ -14,6 +14,7 @@ const (
 )
 
 func reverse(s string) string {
+	// taken from https://www.geeksforgeeks.org/how-to-reverse-a-string-in-golang/
 	rns := []rune(s) // convert to rune
 	for i, j := 0, len(rns)-1; i < j; i, j = i+1, j-1 {
 
